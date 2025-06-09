@@ -11,56 +11,45 @@ body {
 
 /* HEADER */
 
-header {
-        background-color: rgb(0, 0, 77);
-        height: 120px;
+nav {
+        height: 100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        font-size: 30px;
+        justify-content: center;
+        background-color: rgb(48, 48, 82);
 }
-
-h1 {
+header nav ul li a {color: rgb(255, 255, 255)!important;}
+.navbar-brand {
         color: rgb(255, 255, 255);
-        font-size: 50px;
-        padding: 20px;
-}
-
-
-img {
-        width: 60px;
-        height: 60px;
-}
-
-
-.navega a {
         font-size: 40px;
-        color: white;
-        padding: 10px 20px;
+        font-weight: bold;
         text-decoration: none;
 }
 
-
 main {
         color: rgb(255, 255, 255);
+        background-color:  rgb(48, 48, 82);
         text-align: center;
         padding: 20px;
-        background-image: url(../img/fondoheader.avif);
+        background-image: url(../img/pokefondo.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment:scroll;
 }
 
 .hero {
         color: rgb(255, 255, 255);
+        font-size: 30px;
         text-align: center;
         height: 20%;
-        padding: 20px;
-        background-image: url(../img/fondoheader3.avif);
+        padding: 150px;
+        background-image: url(../img/header.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
 }
 
 .eventos {
@@ -72,10 +61,8 @@ main {
         width: 90%;
         height: 90%;
         margin: 10%;
-        background-color: rgb(0, 0, 77);
         padding: 20px;
-        border: 5px solid rgb(255, 255, 255);
-        margin: 30px
+        margin: 30px;
 }
 
 .eventos img {
@@ -85,9 +72,21 @@ main {
 }
 
 .eventos a {
-        background-color: rgb(0, 0, 77);
         text-decoration: none;
-        color: rgb(0, 153, 255)
+        color: rgb(255, 255, 255)
+}
+
+.grid { display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+        row-gap: 20px;
+        column-gap: 20px;
+        }
+
+.grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 }
 
 .eventos1 h2 {
@@ -107,16 +106,14 @@ main {
         font-size: 20px;
         width: 90%;
         height: 90%;
-        background-color: rgb(0, 0, 77);
         padding: 20px;
-        border: 5px solid rgb(255, 255, 255);
         margin: 30px;
 }
 
 .eventos1 div div a {
-        background-color: rgb(0, 0, 77);
-        text-decoration: none;
-        color: rgb(0, 153, 255)
+        background-color:rgb(48, 48, 82);
+        text-decoration:wavy;
+        color: rgb(255, 255, 255)
 }
 
 .eventos1-container {
@@ -136,13 +133,13 @@ main {
 
 /*footer*/
 footer {
-        background-color: rgb(0, 0, 77);
+        background-color: rgb(48, 48, 82);
 }
 
 footer p {
         color: white;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
 }
 
 footer a {
